@@ -34,6 +34,8 @@ assert module_name.my_function('test') == 42
 
 Thanks to Yuriy Kurylyak for ideas and feedback.
 
+The CloudFormation YAML loading code was taken from https://github.com/awslabs/aws-cfn-template-flip
+
 Contributions are more than welcome.
 
 The source code is located here: https://github.com/pplu/cloudformation-loader
@@ -44,9 +46,8 @@ Issuses can be opened here: https://github.com/pplu/cloudformation-loader/issues
 
 Jose Luis Martinez Torres (pplusdomain@gmail.com)
 
-## Copyright
+## Copyright and License
 
 Copyright (c) 2025 by Jose Luis Martinez Torres
 
-The full text of the license can be found in the
-LICENSE file included with this module.
+This project is Apache-2.0
