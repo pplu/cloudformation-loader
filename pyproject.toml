@@ -1,0 +1,7 @@
+[project]
+name = "cloudformation-loader"
+version = "0.1.0"
+description = "Import Python code embedded in CloudFormation Templates without hassle. Helps you test your Lambda Functions"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
