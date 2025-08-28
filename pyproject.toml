@@ -7,3 +7,15 @@ requires-python = ">=3.10"
 license = "Apache-2.0"
 license-files = ["LICENCSE"]
 dependencies = []
+keywords = ["aws", "lambda", "test", "cloudformation" ]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Testing"
+]
+
+[project.urls]
+Homepage = "https://github.com/pplu/cloudformation-loader"
+Documentation = "https://github.com/pplu/cloudformation-loader"
+Repository = "https://github.com/pplu/cloudformation-loader.git"
+Issues = "https://github.com/pplu/cloudformation-loader/issues"
