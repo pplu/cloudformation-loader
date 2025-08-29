@@ -6,7 +6,9 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = "Apache-2.0"
 license-files = ["LICENCSE"]
-dependencies = []
+dependencies = [
+    "pyyaml>=6.0.2",
+]
 keywords = ["aws", "lambda", "test", "cloudformation" ]
 classifiers = [
   "Development Status :: 4 - Beta",
