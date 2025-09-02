@@ -9,7 +9,6 @@ or in the "license" file accompanying this file. This file is distributed on an 
 """
 
 from .odict import ODict
-import six
 import yaml
 
 TAG_MAP = "tag:yaml.org,2002:map"
@@ -52,7 +51,7 @@ def construct_getatt(node):
     Reconstruct !GetAtt into a list
     """
 
-    if isinstance(node.value, six.text_type):
+    if isinstance(node.value, str):
         return node.value.split(".", 1)
     elif isinstance(node.value, list):
         return [s.value for s in node.value]
