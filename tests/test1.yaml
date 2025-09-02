@@ -1,0 +1,47 @@
+Description: "Test 1"
+Resources:
+  Test1:
+    Type: AWS::Lambda::Function
+    Properties:
+      Description: !Sub "${AWS::StackName}"
+      Runtime: python3.12
+      Timeout: 15
+      Handler: index.handler
+      Role: !GetAtt LambdaRole.Arn
+      Code:
+        ZipFile: |-
+          import os
+          import logging
+          import json
+          
+          log = logging.getLogger(__name__)
+          log.setLevel(logging.DEBUG)
+
+          def get_sum(op1, op2):
+            return op1 + op2
+
+          def handler(event, context):
+            return { 'my': { 'lambda': 'return' } }
+  SyntaxError:
+    Type: AWS::Lambda::Function
+    Properties:
+      Description: !Sub "${AWS::StackName}"
+      Runtime: python3.12
+      Timeout: 15
+      Handler: index.handler
+      Role: !GetAtt LambdaRole.Arn
+      Code:
+        ZipFile: |-
+          def get_sum
+  LambdaRole:
+    Type: AWS::IAM::Role
+    Properties:
+      Description: !Sub '${AWS::StackName}'
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal: { Service: lambda.amazonaws.com }
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+      - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole

@@ -21,3 +21,14 @@ Homepage = "https://github.com/pplu/cloudformation-loader"
 Documentation = "https://github.com/pplu/cloudformation-loader"
 Repository = "https://github.com/pplu/cloudformation-loader.git"
 Issues = "https://github.com/pplu/cloudformation-loader/issues"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests"
+]
+python_files = "test_*.py"

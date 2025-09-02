@@ -14,7 +14,7 @@ Inlining the code is very convenient because you don't have to worry about multi
 ## Usage
 
 ```
-import cloudfomation_loader
+import cloudformation_loader
 cloudformation_loader.import_from_cloudformation('mycloudformation.yaml', 'module_name', 'LambdaLogicalId')
 
 import module_name
